@@ -1,55 +1,172 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-</style>
+  <title>Little Paws</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <style>
+    body {font-family: "Times New Roman", Georgia, Serif;}
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+    }
+    .w3-text-grey { font-size: 16px !important; line-height: 1.8; }
+    .w3-large { font-size: 16px !important; line-height: 1.8; }
+    /* 讓錨點不被固定導覽列遮住 */
+    section[id], div[id] { scroll-margin-top: 90px; }
+  </style>
 </head>
 <body>
-    <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">我們這一家</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">成員介紹</a>
-      <a href="#menu" class="w3-bar-item w3-button">日常生活</a>
-      <a href="#contact" class="w3-bar-item w3-button">可愛瞬間</a>
+
+  <!-- Navbar (fixed top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a href="#home" class="w3-bar-item w3-button">Little Paws</a>
+      <div class="w3-right w3-hide-small">
+        <a href="#Sugie" class="w3-bar-item w3-button">Sugie</a>
+        <a href="#Spiky" class="w3-bar-item w3-button">Spiky</a>
+        <a href="#Doggo" class="w3-bar-item w3-button">Doggo</a>
+      </div>
     </div>
   </div>
-</div>
 
-    <!-- Header -->
-<!-- ...existing code... -->
-<!-- Page content -->
-<img src="./w3images/1.jpg" class="w3-image" style="width:100%">
-<!-- ...existing code... -->
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+    <img class="w3-image" src="./1.jpg" alt="Little Paws Hero" width="1600" height="800">
+  </header>
 
-     <!-- Page content -->
+  <!-- Sugie Section -->
+  <div class="w3-row w3-padding-64" id="Sugie">
+    <!-- First row -->
+    <div class="w3-row">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="2.jpg" class="w3-round w3-image w3-opacity-min" alt="Sugie Photo" width="600" height="750">
+      </div>
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Meet the Sugar Glider Family</h1><br>
+        <p class="w3-text-grey">
+          I welcomed a sweet sugar glider couple into my life —
+          「凸凸」, a curious and slightly clumsy dad,
+          and 「娜美」, a gentle and caring mom with a warm heart.
+          Not long after they settled in, something unexpected happened…
+        </p>
+      </div>
+    </div>
 
-       <!-- Project Section -->
+    <!-- Second row -->
+    <div class="w3-row">
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">🍼 The Peanut Surprise</h1>
+        <p class="w3-text-grey">
+          At first, we only noticed two round little "peanuts" hiding inside Nami's pouch.
+          We thought they were just tiny bumps she carried with her every day.
+          But after a few days, those peanuts began to move.
+          And when we finally caught a tiny glimpse inside her pouch…
+          we realized they weren't peanuts at all — they were babies!
+          The moment we saw those tiny faces for the very first time, we were completely amazed and filled with joy.
+          What we thought were just "two little peanuts" turned out to be the sweetest surprise in our little family's story.
+        </p>
+      </div>
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="3.jpg" class="w3-round w3-image w3-opacity-min" alt="Peanut Surprise" width="600" height="900">
+      </div>
+    </div>
+  </div>
 
-         <!-- About Section -->
+  <!-- Spiky Section -->
+  <div class="w3-row w3-padding-64" id="Spiky">
+    <!-- 小次郎 -->
+    <div class="w3-row">
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">More Than Spikes</h1><br>
+        <h3>The First Tiny Troublemaker🫅🏻</h3>
+        <p class="w3-text-grey">
+          「小次郎」 was our family's very first hedgehog baby — and he arrived with maximum attitude in minimum size.
+          He's a mix of shy + sneaky + selectively social. At the park, most hedgehogs would explore the grass or enjoy the sunshine… Not 小次郎.
+          Sunlight? No thanks. Adventure? Absolutely not.
+          His idea of a perfect outdoor trip? Crawling straight into the inside of my pants leg and refusing to come out — like a tiny spiky tenant who pays rent with stress and cuteness.
+          He may be small, but he has mastered the art of: "If I hide, the world can't see me… and I can't see the world. Perfect."
+        </p>
+      </div>
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="4.jpg" class="w3-round w3-image w3-opacity-min" alt="Hedgehog 1" width="600" height="750">
+      </div>
+    </div>
 
-          <!-- Contact Section -->
+    <!-- 妮妮 -->
+    <div class="w3-row">
+      <div class="w3-col m6 w3-padding-large">
+        <h3>The Apple-Loving Princess👸🏻</h3>
+        <p class="w3-text-grey">
+          「妮妮」 is the only little girl in the hedgehog family — and she knows she’s the princess.
+          Her favorite thing in the world? Apples. The moment she gets a slice, she makes a tiny “shua shua shua” munching sound, as if she’s recording an ASMR eating show just for us.
+          She is everyone’s precious baby… but let’s be honest — exercise is not part of her lifestyle. Running wheel? No thanks. Gym time? Never heard of her.
+          When she sleeps, she loves sticking her little bum in the air, showing off that cute pink booty — the kind that makes humans lose all self-control and think: “…Can I poke it just once?”.
+        </p>
+      </div>
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="6.jpg" class="w3-round w3-image w3-opacity-min" alt="Hedgehog 2" style="width: 100%; height: 400px; object-fit: cover;">
+      </div>
+    </div>
 
-          <!-- Image of location/map -->
-       
-  
-</div>
+    <!-- 豆豆 -->
+    <div class="w3-row">
+      <div class="w3-col m6 w3-padding-large">
+        <h3>The Golden-Haired Gentle Boy🪽</h3>
+        <p class="w3-text-grey">
+          「豆豆」 is a little golden-haired hedgehog with adorable single-eyelids — a tiny handsome boy with a soft heart.
+          He has the sweetest personality and never throws a tantrum, not even once. Even when he’s sick, he takes his medicine like a perfect little angel, cooperating without complaint, as if he doesn’t want to worry us.
+          He’s the kind of hedgehog that makes you gently hold your breath because he feels too precious for this world. Soft, calm, and endlessly gentle — 「豆豆」 is truly our little angel in spikes.
+        </p>
+      </div>
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="5.jpg" class="w3-round w3-image w3-opacity-min" alt="Hedgehog 3" style="width: 100%; height: 400px; object-fit: cover;">
+      </div>
+    </div>
 
-          <!-- End page content -->
+    <!-- 菲比 -->
+    <div class="w3-row">
+      <div class="w3-col m6 w3-padding-large">
+        <h3>The Wild Child of the Family⚡️</h3>
+        <p class="w3-text-grey">
+          「菲比」 is the youngest of the family — a high-energy troublemaker wrapped in a tiny hedgehog body.
+          He’s active, playful, and rarely ever gets mad… but holding him is like trying to hug a speeding potato with spikes.
+          The moment you scoop him up, he’s already leaning forward, ready to launch into his next adventure.
+          And his running wheel? Let’s just say he “decorates” it with his… creative masterpieces. No matter how many times we clean it, he’ll proudly repaint it again — as if he’s wearing muddy shoes that never wash off.
+          Chaotic, messy, unstoppable — but that’s exactly what makes 「菲比」 impossible not to love.
+        </p>
+      </div>
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="7.jpg" class="w3-round w3-image w3-opacity-min" alt="Hedgehog 4" style="width: 100%; height: 400px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
 
-           <!-- Footer -->
-    
+  <!-- Doggo Section -->
+  <div class="w3-row w3-padding-64" id="Doggo">
+    <div class="w3-row">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="8.jpg" class="w3-round w3-image w3-opacity-min" alt="Dog" style="width: 100%; height: 400px; object-fit: cover;">
+      </div>
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">The Selectively Obedient Princess 👑</h1><br>
+        <p class="w3-text-grey">
+          「阿捏」 is both obedient and not obedient — she listens only when she feels like it.
+          Whenever we go out, she suddenly becomes a drama queen of laziness.
+          If things don't go her way, she lies flat on the ground, puts on her "I'm so innocent, don't bully me" face, and refuses to move even one paw.
+          She only truly listens to my dad — the rest of us might as well be background noise.
+          And when it comes to other dogs? Her standards are very high. If she doesn't like them, no amount of calling, treats, or baby talk will work.
+          Stubborn, charming, and loyal on her own terms — that's our 「阿捏」, the queen of selective obedience.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-32">
+    <p>© 2025 Little Paws. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
