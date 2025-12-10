@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>聯絡資訊 — Millie</title>
+  <style>
+    body{margin:0;font-family:'Microsoft JhengHei', 'Times New Roman', Times, serif;background:linear-gradient(135deg,#e5e4e2 60%, #f7f7f7 100%);color:#222}
+    .navbar{display:flex;justify-content:space-between;align-items:center;background-color:rgba(255,255,255,0.55);padding:0 40px;height:70px;box-shadow:0 6px 20px rgba(0,0,0,0.06);border-bottom:1px solid rgba(255,255,255,0.25);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+    .navbar-title{font-weight:700;letter-spacing:2px}
+    .navbar-links{display:flex;gap:20px}
+    .navbar-link{color:#333;text-decoration:none;padding:8px 16px;border-radius:20px;background:rgba(255,255,255,0.62);border:1px solid rgba(120,120,120,0.12)}
+    .container{max-width:980px;margin:48px auto;padding:20px}
+    .card{background:#fff;border-radius:12px;padding:28px;border:1px solid rgba(209,208,206,0.9);box-shadow:0 12px 40px rgba(140,140,140,0.06)}
+    .field{margin:10px 0}
+    .label{font-weight:700;margin-bottom:6px;display:block}
+    footer{margin-top:40px;padding:18px 0;text-align:center;color:#666;border-top:1px solid rgba(0,0,0,0.04);background:transparent}
+    .icons{display:flex;gap:18px;justify-content:center;align-items:center;margin-top:8px}
+    .icon{width:22px;height:22px;fill:#222;opacity:0.9}
+  </style>
+</head>
+<body>
+  <nav class="navbar" style="position:relative;z-index:20">
+    <div class="navbar-title">ＣＯＮＴＡＣＴ</div>
+    <div class="navbar-links">
+      <a class="navbar-link" href="index.html">首頁</a>
+      <a class="navbar-link" href="about.html">關於我</a>
+      <a class="navbar-link" href="portfolio.html">我的作品集</a>
+      <a class="navbar-link" href="contact.html">聯絡資訊</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="card" style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;background:#fafafa;position:relative;z-index:10">
+      <div style="flex:1 1 360px;min-width:260px;padding:8px 12px;">
+        <h2 style="margin-top:0">聯絡資訊</h2>
+        <div class="field" style="background:#f2f2f2;padding:12px;border-radius:8px">
+          <span class="label">系所</span>
+          <div>兒童英語教育學系</div>
+        </div>
+        <div class="field" style="background:#f2f2f2;padding:12px;border-radius:8px;margin-top:10px">
+          <span class="label">學校</span>
+          <div>國立台北教育大學</div>
+        </div>
+        <div class="field" style="background:#f2f2f2;padding:12px;border-radius:8px;margin-top:10px">
+          <span class="label">地址</span>
+          <div>台北市大安區和平東路二段134號</div>
+        </div>
+        <div class="field" style="background:#f2f2f2;padding:12px;border-radius:8px;margin-top:10px">
+          <span class="label">網址</span>
+          <div><a href="網址： https://www.ntue.edu.tw"> https://www.ntue.edu.tw</a></div>
+        </div>
+        <div class="field" style="background:#f2f2f2;padding:12px;border-radius:8px;margin-top:10px">
+          <span class="label">電話</span>
+          <div><a href="tel:+8860266396688">02-6639-6688</a></div>
+        </div>
+      </div>
+
+      <div style="flex:1 1 360px;min-width:300px;">
+        <!-- Google Maps embed (centered on the address) -->
+        <iframe
+          src="https://www.google.com/maps?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E5%92%8C%E5%B9%B3%E6%9D%B1%E8%B7%AF%E4%BA%8C%E6%AE%B5134%E8%99%9F&output=embed"
+          width="100%" height="360" style="border:0;border-radius:8px" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>information of CEE </div>
+    <div class="icons" aria-hidden="true" style="justify-content:center">
+      <!-- envelope icon (mono) -->
+      <a href="mailto:cee@tea.ntue.edu.tw" style="color:inherit;text-decoration:none;pointer-events:auto">
+        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11zM4.5 6l7.5 5 7.5-5"/></svg>
+      </a>
+      <!-- phone icon -->
+      <a href="tel:+8860266396688" style="color:inherit;text-decoration:none;pointer-events:auto">
+        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8a15.05 15.05 0 0 0 6.6 6.6l2.1-2.1a1 1 0 0 1 1-.2 11.72 11.72 0 0 0 3.7.6 1 1 0 0 1 1 1v3.7A1 1 0 0 1 20 22 18 18 0 0 1 2 4a1 1 0 0 1 1-1h3.7a1 1 0 0 1 1 1 11.72 11.72 0 0 0 .6 3.7 1 1 0 0 1-.2 1l-2.1 2.1z"/></svg>
+      </a>
+    </div>
+  </footer>

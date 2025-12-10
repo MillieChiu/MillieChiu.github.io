@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>關於 Millie</title>
+    <style>
+        :root{
+            --bg:#e5e4e2;
+            --bg-2:#f7f7f7;
+            --accent:#d1d0ce;
+            --text:#222;
+        }
+        html,body{height:100%;margin:0;font-family:'Microsoft JhengHei', 'Times New Roman', Times, serif;color:var(--text);background:linear-gradient(135deg,var(--bg) 60%, var(--bg-2) 100%);}
+        .navbar{display:flex;justify-content:space-between;align-items:center;background-color:var(--bg);padding:0 28px;height:70px;box-shadow:0 4px 16px rgba(180,180,180,0.15);border-bottom:1.5px solid var(--accent);position:relative;z-index:10}
+        
+        .navbar-links{display:flex;gap:20px}
+        .navbar-link{color:#444;text-decoration:none;padding:8px 18px;border-radius:20px;border:1px solid #b0b0b0;background:rgba(255,255,255,0.7)}
+
+        /* 主內容區 */
+        .container{max-width:980px;margin:48px auto;padding:20px}
+        .card{display:flex;gap:32px;align-items:flex-start;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));padding:28px;border-radius:14px;border:1px solid var(--accent);box-shadow:0 12px 40px rgba(140,140,140,0.08)}
+        .photo-wrap{flex:0 0 auto;display:flex;align-items:center}
+        .profile-photo{width:170px;height:170px;object-fit:cover;border-radius:12px;border:1px solid #cfcfcf;box-shadow:0 8px 26px rgba(150,150,150,0.08)}
+        .divider{width:1px;background:linear-gradient(180deg, transparent, #dcdcdc, transparent);margin:8px 12px 8px 12px}
+        .about-text{flex:1}
+        .about-text h1{margin:0 0 8px 0;font-size:1.4rem}
+        .about-text .subtitle{color:#555;margin-bottom:12px}
+        .about-text p{margin:0 0 14px 0;line-height:1.8;font-size:1.02rem}
+        .interests{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 16px 0}
+        .badge{background:rgba(0,0,0,0.05);padding:6px 10px;border-radius:999px;font-size:0.92rem;border:1px solid rgba(0,0,0,0.04)}
+        .cta-button{display:inline-block;padding:10px 18px;background:#222;color:#fff;border-radius:10px;text-decoration:none;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+
+        @media (max-width:900px){
+            .card{flex-direction:column;text-align:center}
+            .profile-photo{width:150px;height:150px}
+            .divider{display:none}
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-title">ＡＢＯＵＴ ＭＥ</div>
+        <div class="navbar-links">
+            <a class="navbar-link" href="index.html">首頁</a>
+            <a class="navbar-link" href="about.html">關於我</a>
+            <a class="navbar-link" href="portfolio.html">我的作品集</a>
+            <a class="navbar-link" href="contact.html">聯絡資訊</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="card" aria-label="關於 Millie">
+            <div class="photo-wrap">
+                <!-- 請把 1.jpeg 放在同資料夾 /1209 -->
+                <img src="1.jpeg" alt="Millie 的個人照" class="profile-photo">
+            </div>
+            <div class="divider" aria-hidden="true"></div>
+            <div class="about-text">
+                <h1>關於我</h1>
+                <div class="subtitle">國立台北教育大學</div>
+                <p>嗨，大家好！我是國立臺北教育大學兒童英語教育學系的 Millie！很高興在這裡呈現我的網站學習成果。在課業之餘，我喜歡用追劇、聽音樂來放鬆，也是一位熱衷於照顧小動物的愛心人士。希望大家會喜歡我的分享！。</p>
+
+                <div class="interests" aria-label="我的興趣">
+                    <span class="badge">追劇</span>
+                    <span class="badge">聽音樂</span>
+                    <span class="badge">照顧小動物</span>
+                    <span class="badge">網頁設計（學習中）</span>
+                </div>
+
+                
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

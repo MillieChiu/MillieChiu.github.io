@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>作品集 — Millie</title>
+  <style>
+    body{font-family:'Microsoft JhengHei', 'Segoe UI', Roboto, sans-serif;margin:0;background:#f6f6f7;color:#222}
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* 半透明並與背景融合，同時維持可讀性 */
+      background-color: rgba(255,255,255,0.55);
+      /* 模糊背景以便更柔和的融合效果（支援較新瀏覽器） */
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+      padding: 0 40px;
+      height: 70px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.25);
+      transition: background-color 180ms ease, box-shadow 180ms ease;
+    }
+    
+    
+    .navbar-links {
+      display: flex;
+      gap: 28px;
+    }
+    .navbar-link {
+      color: #333;
+      text-decoration: none;
+      font-size: 1.08rem;
+      padding: 10px 28px;
+      border-radius: 24px;
+      border: 1px solid rgba(120,120,120,0.18);
+      /* 連結按鈕也半透明以融入背景，但保留足夠對比 */
+      background: rgba(255,255,255,0.62);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: 
+        background 0.18s, 
+        color 0.18s, 
+        border 0.18s, 
+        box-shadow 0.18s,
+        transform 0.18s;
+      font-family: 'Microsoft JhengHei', 'Times New Roman', Times, serif;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    .navbar-link:hover {
+      /* 互動時略微提升對比與深度 */
+      background: rgba(255,255,255,0.85);
+      color: #000;
+      border: 1px solid rgba(0,0,0,0.12);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transform: translateY(-2px) scale(1.04);
+    }
+    /* 增加導覽列底部漸層線 */
+    .navbar::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #d1d0ce 0%, #e5e4e2 100%);
+    }
+    /* 讓導覽列浮起 */
+    nav.navbar {
+      position: relative;
+      z-index: 10;
+    }
+    .container{max-width:1100px;margin:36px auto;padding:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+    .card{background:#fff;border-radius:12px;border:1px solid #e6e6e6;overflow:hidden;box-shadow:0 8px 30px rgba(30,30,30,0.06)}
+    .preview{height:180px;background:#ddd;display:flex;align-items:center;justify-content:center;color:#666;font-size:14px}
+    .card-body{padding:16px}
+    .title{font-weight:700;margin:0 0 8px 0}
+    .desc{margin:0 0 12px 0;color:#555}
+    .btn{display:inline-block;padding:10px 14px;background:#222;color:#fff;border-radius:8px;text-decoration:none}
+    .links{display:flex;gap:8px;flex-wrap:wrap}
+    .note{font-size:0.9rem;color:#666;margin-top:10px}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-title">ＰＯＲＴＦＯＬＩＯ</div>
+    <div class="navbar-links">
+      <a class="navbar-link" href="index.html">首頁</a>
+      <a class="navbar-link" href="about.html">關於我</a>
+      <a class="navbar-link" href="portfolio.html">我的作品集</a>
+      <a class="navbar-link" href="contact.html">聯絡資訊</a>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>精選作品集</h1>
+
+    <div class="grid">
+      <div class="card">
+        <div class="preview"><img src="5.jpeg" alt="1021 project thumbnail" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div class="card-body">
+          <p class="title">Little Paws</p>
+          <p class="desc">My sweet family members</p>
+          <div class="links">
+            <a class="btn" href="../1021/index.html">open</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="preview"><img src="4.jpeg" alt="1014 namecard thumbnail" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div class="card-body">
+          <p class="title">Namecard</p>
+          <p class="desc">About me</p>
+          <div class="links">
+            <a class="btn" href="../1014/namecard.html">open</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="preview"><img src="6.jpeg" alt="root index thumbnail" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div class="card-body">
+          <p class="title">Fuji Kaze</p>
+          <p class="desc">My favorite artist</p>
+          <div class="links">
+            <a class="btn" href="file:///Users/llieoting/Documents/MillieChiu.github.io/MillieChiu/MillieChiu.github.io/index.html">open</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
